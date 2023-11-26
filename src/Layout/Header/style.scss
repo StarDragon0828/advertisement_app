@@ -1,0 +1,45 @@
+.header-bar {
+    .topbar-menu-mobile-container{
+        background-color: rgb(50, 48, 65);
+        padding-left: 80px;
+        padding-right: 80px;
+        .sidebar-header{
+            img{
+                width: 80px;
+            }
+            .logo-item{
+                .logo-text{
+                    color: white;
+                    font-size: 30px;
+                }
+            }
+        }
+        .sidebar-item{
+            align-items: center;
+            .itme-1{
+                color: white;
+                font-size: 20px;
+                padding-right: 70px;
+            }
+            .item-2{
+                i{
+                    color: white;
+                    font-size: 30px;
+                    padding-right: 25px;
+                }
+            }
+            .item-3{
+                align-items: center;
+                i{
+                    color: white;
+                    font-size: 30px;
+                    padding-right: 25px;
+                }
+                div{
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
