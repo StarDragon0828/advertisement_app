@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Layout from "../Layout/index"
+import Home from "../pages/Home";
 
 const Routing = () => {
     return(
         <div>
             <Routes>
-                <Route path="/" element = {<Layout />} />
+                <Route path="/" element = {<Home />} />
             </Routes>
         </div>
     )

@@ -1,0 +1,30 @@
+.toggleIcon {
+  padding: 10px 15px;
+  font-size: 25px;
+  border-radius: 15px 5px 5px 15px;
+  border: 1px solid #ccc;
+}
+
+.settingIcon {
+  padding: 10px 15px;
+  font-size: 25px;
+  border-radius: 5px 15px 15px 5px;
+  border: 1px solid #ccc;
+}
+
+.searchInput {
+  position: relative;
+
+  i {
+    position: absolute;
+    top: 30%;
+    left: 126px;
+  }
+
+  input {
+    width: 550px;
+    padding: 18px;
+    padding-left: 150px;
+    border: 1px solid #ccc;
+  }
+}
