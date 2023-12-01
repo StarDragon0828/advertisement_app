@@ -16,7 +16,70 @@ const Home = () => {
           </button>
         ))}
       </div>
-        <Carousel />
+
+      <Carousel
+        settings={{
+          dots: false,
+          Infinity: false,
+          speed: 500,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          swipeToSlide: true,
+          arrows: false,
+        }}
+      />
+
+      <Carousel
+        settings={{
+          dots: false,
+          Infinity: false,
+          speed: 500,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          swipeToSlide: true,
+          arrows: true,
+        }}
+        heading="Cidades"
+      />
+
+      <Carousel
+        settings={{
+          dots: false,
+          Infinity: false,
+          speed: 500,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          swipeToSlide: true,
+          arrows: true,
+        }}
+        heading="Canions"
+      />
+
+      <Carousel
+        settings={{
+          dots: false,
+          Infinity: false,
+          speed: 500,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          swipeToSlide: true,
+          arrows: true,
+        }}
+        heading="Restaurantes"
+      />
+
+      <Carousel
+        settings={{
+          dots: false,
+          Infinity: false,
+          speed: 500,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          swipeToSlide: true,
+          arrows: true,
+        }}
+        heading="Adventuras"
+      />
     </Layout>
   );
 };
