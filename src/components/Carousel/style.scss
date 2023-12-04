@@ -1,0 +1,59 @@
+.main-carousel {
+  margin-left: 36px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  width: 110rem;
+
+  .carousel-heading {
+    top: 20px;
+    position: relative;
+    left: 46px;
+  }
+
+  .card {
+    width: 18rem !important;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+
+  .slick-list {
+    padding: 40px;
+  }
+
+  .slick-slide img {
+    display: block;
+    border-radius: 20px 20px 0px 0px;
+  }
+}
+
+.main-carousel-without-heading {
+  margin-left: 36px;
+  
+  width: 110rem;
+  .carousel-heading {
+    top: 20px;
+    position: relative;
+    left: 46px;
+  }
+
+  .card {
+    width: 18rem !important;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+
+  .slick-list {
+    padding: 40px;
+  }
+
+  .slick-slide img {
+    display: block;
+    border-radius: 20px 20px 0px 0px;
+  }
+}
