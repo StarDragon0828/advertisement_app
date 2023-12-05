@@ -1,0 +1,89 @@
+.radio-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inner-field-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: row;
+    max-width: 350px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+.radio-wrapper-inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.inner-field-radio-wrapper {
+    max-width: 350px;
+    margin: 0 auto;
+}
+.radio-right h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.radio-right p {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 0;
+}
+.checkbox-field-wrapper {
+    max-width: 350px;
+    width: 100%;
+        margin-top: 25px;
+}
+.checkbox-field-wrapper ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.checkbox-field-wrapper ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.checkbox-field-wrapper ul li span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+}
+.check-label span {
+    padding-top: 0;
+    padding-bottom: 0px;
+}
+.css-p5qk2e-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-p5qk2e-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #00CD9B !important;
+}
+.checkbox-field-wrapper ul li.with-textbox {
+    flex-direction: column;
+}
+.list-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        margin-bottom: 10px;
+}
+.single-field.step-four {
+    width: 100%;
+    justify-content: flex-start;
+}
+.single-field.step-four .txt {
+    max-width: 263px;
+    margin-right: auto !important;
+    margin-left: 0 !important;
+    width: 100%;
+}
+.field-wrapper.step-four {
+    max-width: 350px;
+    margin: 0 auto;
+    width: 100%;
+}

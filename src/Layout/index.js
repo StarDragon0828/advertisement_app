@@ -4,10 +4,10 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
-    return(
+    return (
         <div>
             <Header />
-            { children }
+            {children}
             <Footer />
         </div>
     );

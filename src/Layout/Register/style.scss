@@ -1,0 +1,66 @@
+
+.register-wrapper{
+    max-width: 1000px;
+        width: 100%;
+        background: #fff;
+        margin: 0 auto;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #ccc;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        flex-direction: column;
+}
+.register-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.register-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.gender-group {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.gender-group label,.gender-group div > label span{
+    font-size: 14px;
+}
+.form-inner-wrapper {
+    width: 350px;
+    margin: 0 auto;
+}
+
+// .inner-field-wrapper {
+//     display: flex;
+//     align-items: flex-start;
+//     gap: 10px;
+// }
+.inner-field-wrapper button {
+    height: 40px;
+    width: 50px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background: none;
+}
+.form-field-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.form-field-group label#demo-row-radio-buttons-group-label {
+    font-size: 14px;
+}
+.register-btn-wrapper {
+    display: flex;
+}
+// .register-wrapper .terms {
+//     margin-top: 40px;
+// }

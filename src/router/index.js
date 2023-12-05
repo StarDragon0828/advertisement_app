@@ -1,14 +1,21 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
-import Announcement from "../pages/Announcement";
+import Layout from "../Layout/index"
+import Login from "../Layout/Login";
+import FirstMultiStepForm from "../FirstMultiStepForm";
+import Register from "../Layout/Register";
+import Advertise from "../Layout/Advertise";
+import Step from "../FirstMultiStepForm/index"
 
 const Routing = () => {
-    return(
+    return (
         <div>
             <Routes>
-                <Route path="/" element = {<Home />} />
-                <Route path="/announcement" element = {<Announcement />} />
+                <Route path="/" element={<Login />} />
+                <Route path="/Register" element={<Register />} />
+                <Route path="/advertise" element={<Advertise />} />
+                <Route exact path="/firstMultipartForm" element={<FirstMultiStepForm />} />
+                <Route path="/step" element ={<Step/>} />
             </Routes>
         </div>
     )

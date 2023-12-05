@@ -1,0 +1,77 @@
+.advertise-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+}
+
+.advertise-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.advertise-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.advertise-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto 15px;
+    width: 100%;
+}
+.ad-arrow{
+        display: inline-block;
+            width: 0;
+            height: 0;
+            border-width: 7px;
+            border-style: solid;
+            border-color: transparent transparent transparent #888;
+            border-radius: 4px;
+            margin-left: 10px;
+            margin-bottom: -1px;
+}
+.ad-option{
+    margin: 0;
+    padding: 0;
+
+}
+.ad-option {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #888;
+}
+.btn-ad {
+    max-width: 400px;
+    width: 100%;
+    margin: 40px auto 0;
+}
+.btn-outline {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px 0;
+    background: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+    border-radius: 3px;
+    transition: 0.3s all ease-in-out;
+}
+.btn-outline:hover{
+    background: #323041;
+    color:#fff;
+    border: 1px solid #323041;
+}
