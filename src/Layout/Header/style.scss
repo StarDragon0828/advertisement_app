@@ -1,4 +1,9 @@
 .header-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   .topbar-menu-mobile-container {
     background-color: rgb(50, 48, 65);
     padding-left: 80px;
