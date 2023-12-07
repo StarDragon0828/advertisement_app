@@ -1,0 +1,37 @@
+.first-description{
+    font-family: "Roboto" !important;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.second-description{
+    font-family: "Roboto" !important;
+    font-weight: 700;
+    color: grey;
+}
+
+.por-font{
+    font-size: 15px;
+}
+
+.card-container{
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px grey;
+    margin-bottom: 10px;
+}
+
+.imageContainer{
+    position: relative;
+}
+
+.imageText{
+    position: absolute;
+    top: 18px;
+    left: 2px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+}

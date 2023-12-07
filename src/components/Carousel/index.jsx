@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import "./style.scss";
 import Logo from "../../assets/img/nature.avif";
 import Star from "../../assets/img/5-star-rating.png";
