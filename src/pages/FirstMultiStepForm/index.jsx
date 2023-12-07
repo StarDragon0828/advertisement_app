@@ -20,7 +20,7 @@ import PartSeven from "./Stages/sevenStep/PartSeven";
 import PartEight from "./Stages/eightStep/PartEight";
 
 const FirstMultiStepForm = () => {
-  const [activeStage, setActiveStage] = useState(8);
+  const [activeStage, setActiveStage] = useState(1);
   const totalStages = 8; // Update this based on the total number of steps
 
   const handleStageChanges = (updatedStage) => {
