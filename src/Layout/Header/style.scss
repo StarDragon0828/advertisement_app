@@ -11,6 +11,7 @@
                 .logo-text{
                     color: white;
                     font-size: 30px;
+                    font-family: "open sans";
                 }
             }
         }
@@ -18,7 +19,9 @@
             align-items: center;
             .itme-1{
                 color: white;
-                font-size: 20px;
+                font-size: 15px;
+                font-weight: 500;
+                font-family: "open sans";
                 padding-right: 70px;
             }
             .item-2{
@@ -33,11 +36,15 @@
                 i{
                     color: white;
                     font-size: 30px;
-                    padding-right: 25px;
+                    padding-right: 15px;
                 }
                 div{
                     color: white;
                     font-size: 20px;
+                }
+                .profile-user{
+                    font-size: 15px;
+                    font-weight: 500;
                 }
             }
         }

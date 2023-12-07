@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/img/logo.png";
+import Logo from "../../assets/img/advertisement-logo.png";
 import "./style.scss";
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
           <div className="logo-item d-flex align-items-center">
             <img src={Logo} alt="Logo" />
             <div className="logo-text px-1">
-              <b className="px-1 ">turismo</b>inteligente
+              <b>turismo</b>inteligente
             </div>
           </div>
           <div className="sidebar-item d-flex">
