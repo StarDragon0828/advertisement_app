@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Layout from "../Layout/index";
+import Layout from "../../Layout/index";
 import {
     Box,
     Container,
@@ -11,7 +11,7 @@ import {
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import PartOne from "./Stages/firstStep/PartOne";
 import PartTwo from "./Stages/secondStep/PartTwo";
-import CustomizedProgressBars from "../components/Common/LineProgress";
+import CustomizedProgressBars from "../../components/Common/LineProgress";
 import PartThree from "./Stages/thirdStep/PartThree";
 import PartFour from "./Stages/fourthStep/PartFour";
 import PartFive from "./Stages/fiveStep/PartFive";
@@ -45,16 +45,16 @@ const FirstMultiStepForm = () => {
                 {/* Common Header */}
                 <Grid container spacing={1}>
                     <div className="step-header">
-                    <Grid item xs={1}>
-                        <IconButton color="primary" aria-label="back" onClick={() => handleStageChanges(activeStage - 1)} disabled={activeStage === 1}>
-                            <ArrowBackIosIcon />
-                        </IconButton>
-                    </Grid>
-                    <Grid item xs={11}  >
-                        <Typography variant="h3" color="text.primary" component="h2" align="center" className="step-title">
-                            {stepTitles[activeStage]}
-                        </Typography>
-                    </Grid>
+                        <Grid item xs={1}>
+                            <IconButton color="primary" aria-label="back" onClick={() => handleStageChanges(activeStage - 1)} disabled={activeStage === 1}>
+                                <ArrowBackIosIcon />
+                            </IconButton>
+                        </Grid>
+                        <Grid item xs={11}  >
+                            <Typography variant="h3" color="text.primary" component="h2" align="center" className="step-title">
+                                {stepTitles[activeStage]}
+                            </Typography>
+                        </Grid>
                     </div>
                     <Grid item xs={12}>
                         {/* Progress bar */}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import { Button } from "@mui/material";
-import Layout from "../index";
+import Layout from "../../Layout/index";
 // import check from '../../assets/check.png';
 import {
   FormControl,

@@ -1,20 +1,20 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "../Layout/index"
-import Login from "../Layout/Login";
-import FirstMultiStepForm from "../FirstMultiStepForm";
-import Register from "../Layout/Register";
+import Login from "../pages/Login";
+import FirstMultiStepForm from "../pages/FirstMultiStepForm";
+import Register from "../pages/Register";
 import Advertise from "../Layout/Advertise";
-import Step from "../FirstMultiStepForm/index"
+import Step from "../pages/FirstMultiStepForm"
 
 const Routing = () => {
     return (
         <div>
             <Routes>
                 <Route path="/" element={<Login />} />
-                <Route path="/Register" element={<Register />} />
+                <Route path="/register" element={<Register />} />
                 <Route path="/advertise" element={<Advertise />} />
-                <Route exact path="/firstMultipartForm" element={<FirstMultiStepForm />} />
+                <Route exact path="/first-multipart-form" element={<FirstMultiStepForm />} />
                 <Route path="/step" element ={<Step/>} />
             </Routes>
         </div>

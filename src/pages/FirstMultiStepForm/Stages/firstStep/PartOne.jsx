@@ -17,7 +17,7 @@ import AddPhotoAlternateOutlinedIcon from "@mui/icons-material/AddPhotoAlternate
 import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import CustomizedProgressBars from "../../../components/Common/LineProgress";
+// import CustomizedProgressBars from "../../../components/Common/LineProgress";
 
 const PartOne = (props) => {
   const submitForm = () => {
