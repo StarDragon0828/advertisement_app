@@ -5,8 +5,15 @@ import {Typography} from "@mui/material";
 const Footer = () => {
   return (
     <div className="footer-bar">
+      
+      <div className=" social-item d-flex align-items-center col-12 d-lg-none justify-content-center">
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+        </div>
       <div className=" d-flex">
-        <div className="footer-sidebar-container d-flex col-11">
+        
+        <div className="footer-sidebar-container d-flex  col-11 flex-wrap align-items-center flex-column flex-md-row">
           <div className="contact-item d-flex flex-column align-items-center">
             <div>CONTATO</div>
             <div>+55 48 99999-9999</div>
@@ -29,7 +36,7 @@ const Footer = () => {
             <div>Termos & Condicoes</div>
           </div>
         </div>
-        <div className=" social-item d-flex flex-column aling-items-center col-1">
+        <div className=" social-item d-flex flex-column aling-items-center col-1 d-none d-lg-flex">
           <i class="bi bi-whatsapp"></i>
           <i class="bi bi-instagram"></i>
           <i class="bi bi-facebook"></i>
