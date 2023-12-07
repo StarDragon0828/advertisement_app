@@ -1,13 +1,18 @@
-// General styles
 $primary-color: rgb(50, 48, 65);
 $secondary-color: #2c3e50;
 
 .footer-bar {
   background-color: $primary-color;
   color: white;
-  padding: 20px;
+  padding: 10px 10px 0px 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
 
   .footer-sidebar-container {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 
     .contact-item,
@@ -18,7 +23,7 @@ $secondary-color: #2c3e50;
       padding: 10px;
 
       div {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
 
       a {
@@ -27,26 +32,26 @@ $secondary-color: #2c3e50;
       }
     }
   }
+
   .social-item {
     flex: 1;
     text-align: center;
-    // padding: 10px;
 
-    i{
-        padding: 10px;
+    i {
+      padding: 5px;
+      font-size: 18px;
     }
-}
+  }
 
-    // Media query for small screens
-    @media (max-width: 600px) {
-        flex-direction: column;
-  
-        .contact-item,
-        .service-item,
-        .info-item,
-        .social-item {
-          width: 100%;
-          margin-bottom: 20px;
-        }
+  @media (max-width: 600px) {
+    .footer-sidebar-container {
+      .contact-item,
+      .service-item,
+      .info-item,
+      .social-item {
+        width: 100%;
+        margin-bottom: 10px;
       }
+    }
+  }
 }
