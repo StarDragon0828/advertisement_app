@@ -18,10 +18,11 @@ import PartFive from "./Stages/fiveStep/PartFive";
 import PartSix from "./Stages/sixStep/PartSix";
 import PartSeven from "./Stages/sevenStep/PartSeven";
 import PartEight from "./Stages/eightStep/PartEight";
+import PartNine from "./Stages/nineStep/PartNine";
 
 const FirstMultiStepForm = () => {
   const [activeStage, setActiveStage] = useState(1);
-  const totalStages = 8; // Update this based on the total number of steps
+  const totalStages = 9; // Update this based on the total number of steps
 
   const handleStageChanges = (updatedStage) => {
     setActiveStage(updatedStage);
@@ -38,6 +39,7 @@ const FirstMultiStepForm = () => {
     6: "Dados Bancários",
     7: "Complemento",
     8: "Criar Anúncio",
+    9: "Configurar Anúncio",
     // ... Add more titles for additional steps
   };
 
@@ -108,6 +110,9 @@ const FirstMultiStepForm = () => {
         )}
         {activeStage === 8 && (
           <PartEight handleStageChanges={handleStageChanges} />
+        )}
+        {activeStage === 9 && (
+          <PartNine handleStageChanges={handleStageChanges} />
         )}
         {/* ... other steps */}
       </Container>
