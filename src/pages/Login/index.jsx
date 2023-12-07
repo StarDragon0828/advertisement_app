@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 import { FormControl, FormControlLabel, Checkbox, InputLabel, MenuItem, Select, TextField } from "@mui/material";
 import { Button } from "@mui/material";
-import Layout from "../index";
+import Layout from "../../Layout/index";
 
 
 const Login = () => {
