@@ -6,7 +6,7 @@ import LinearProgress, {
 } from "@mui/material/LinearProgress";
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
-    height: 10,
+    height: 4,
     // borderRadius: 5,
     [`&.${linearProgressClasses.colorPrimary}`]: {
         backgroundColor:

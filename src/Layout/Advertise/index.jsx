@@ -17,7 +17,7 @@ import {
 } from "@mui/material";
 
 
-const Advertise = () => {
+const ConfAdvertise = () => {
   return (
     <Layout>
       <div className="wrapper">
@@ -57,4 +57,4 @@ const Advertise = () => {
     </Layout>
   );
 };
-export default Advertise;
+export default ConfAdvertise;
