@@ -19,7 +19,7 @@ import {
 
 const PartSeven = (props) => {
     const submitForm = () => {
-        props.handleStageChanges(3);
+        props.handleStageChanges(8);
     };
     return (
         <React.Fragment>
