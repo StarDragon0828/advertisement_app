@@ -1,0 +1,41 @@
+.checkout-container {
+    background-color: white;
+    border-radius: 10px;
+    width: 98%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.checkout-inner-container {
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    margin-bottom: 130px;
+}
+
+.checkout-table {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.checkout-table-heading {
+    background-color: #EBEBEB;
+    border-radius: 5px;
+    width: 100vh;
+}
+
+.checkout-side-button {
+    border: 2px solid #00CD9B;
+    padding: 10px 60px;
+    color: black;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.checkout-main-button {
+    background-color: #00CD9B !important;
+    padding: 10px 80px;
+    color: white;
+    border-radius: 5px;
+    margin: 0px;
+}
