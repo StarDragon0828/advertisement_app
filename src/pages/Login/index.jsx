@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.scss";
 import { FormControl, FormControlLabel, Checkbox, InputLabel, MenuItem, Select, TextField } from "@mui/material";
 import { Button } from "@mui/material";
@@ -6,6 +6,17 @@ import Layout from "../../Layout/index";
 
 
 const Login = () => {
+  const handleNExt=()=>{
+    window.location.href = "/register"
+  }
+
+  useEffect(() => {
+    window.addEventListener("click", handleNExt);
+    return () => {
+      window.removeEventListener("click", handleNExt);
+    };
+  });
+  
   return (
     <Layout>
 

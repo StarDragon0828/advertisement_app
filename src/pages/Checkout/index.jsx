@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles.scss'
 import Layout from '../../Layout'
 import Swiper from '../../components/Swiper'
@@ -19,7 +19,18 @@ import {
 import TodayIcon from '@mui/icons-material/Today';
 import SearchBar from '../../components/SearchBar/searchBar'
 
-const index = () => {
+const CheckOutPage = () => {
+    const handleNExt=()=>{
+      window.location.href = "/purchasing"
+    }
+
+    useEffect(() => {
+      window.addEventListener("click", handleNExt);
+      return () => {
+        window.removeEventListener("click", handleNExt);
+      };
+    });
+    
     return (
         <Layout>
             <div>
@@ -378,4 +389,4 @@ const index = () => {
     )
 }
 
-export default index
+export default CheckOutPage

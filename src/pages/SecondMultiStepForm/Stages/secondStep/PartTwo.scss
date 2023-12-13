@@ -1,0 +1,52 @@
+.step-2.step-sub-title {
+    margin-top: 0 !important;
+    font-size: 20px;
+    margin-bottom: 20px !important;
+        font-weight: 500;
+}
+.plusButton {
+    width: 42px !important;
+    height: 42px !important;
+    padding: 0 !important;
+}
+.customTextBox {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-right: 10px;
+}
+.field-wrapper{
+    max-width: 350px;
+    margin: 0 auto;
+}
+.formControl .mainCategorySelectbox {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: flex-start;
+    gap: 10px;
+}
+.single-field {
+    display: flex;
+}
+.sub-btn-wrapper .advanceBtn {
+    max-width: 350px;
+    margin: 0 auto !important;
+   
+}
+.sub-btn-wrapper {
+    display: flex;
+    padding: 0 !important;
+}
+.formControl .btn-add {
+    width: 40px !important;
+    height: 37px !important;
+    padding: 0 !important;
+    border: 1px solid #ccc;
+    min-width: 0;
+    transition: 0.3s all ease-in-out;
+}
+.formControl .btn-add:hover{
+    background: #33d7af !important;
+    color:#fff !important;
+}

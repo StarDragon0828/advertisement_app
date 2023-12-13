@@ -14,11 +14,7 @@ $(document).ready(function () {
   });
 
 
-
-
-
-
-    const navbarMenu = document.getElementById("menu");
+    const navbarMenu = document.getElementById("menuBar");
     const burgerMenu = document.getElementById("burger");
     const bgOverlay = document.querySelector(".overlay");
     

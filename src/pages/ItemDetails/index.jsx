@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles.scss'
 import Layout from "../../Layout/index";
 import Swiper from '../../components/Swiper'
@@ -32,6 +32,17 @@ import SearchBar from '../../components/SearchBar/searchBar';
 import { Link } from 'react-router-dom';
 
 const ItemDetails = () => {
+    const handleNExt=()=>{
+      window.location.href = "/checkout"
+    }
+
+    useEffect(() => {
+      window.addEventListener("click", handleNExt);
+      return () => {
+        window.removeEventListener("click", handleNExt);
+      };
+    });
+    
 
     const tabContent = ["Litoral SC", "Cânions", "Serra RS", "Serra SC", "Floripa", "Praia", "Rosa Norte", "Praia ", "Rosa Norte", "Praia"]
 
@@ -90,7 +101,7 @@ const ItemDetails = () => {
                                         <div className="thumbnail-image" style={{ backgroundImage: `url(${ItemDetailImage})` }} />
                                     </a>
                                 </aside>
-                                <main className="primary" style={{ backgroundImage: `url(${ItemDetailImage})` }} />
+                                <main className="primary" style={{ backgroundImage: `url(${ItemDetailImage})`, backgroundSize:"95%", backgroundColor:"white" }} />
                             </div>
                         </div>
                         <div>

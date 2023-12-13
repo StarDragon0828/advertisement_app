@@ -2,9 +2,13 @@ import React from "react";
 import "./style.scss";
 
 const SearchBar = () => {
+
+  
+
+
   return (
-    <div className="d-flex justify-content-center my-4">
-      <button className="toggleIcon me-2">
+    <div className="d-flex justify-content-center my-4">     
+      <button id="burger" className="toggleIcon me-2">
         <i className="bi bi-list"></i>
       </button>
       <div className="searchInput">

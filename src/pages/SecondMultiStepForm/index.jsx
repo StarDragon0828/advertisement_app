@@ -24,8 +24,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 
-const FirstMultiStepForm = () => {
-
+const SecondMultiStepForm = () => {
   const [activeStage, setActiveStage] = useState(1);
   const [open, setOpen] = useState(false);
   const totalStages = 7; // Update this based on the total number of steps
@@ -40,20 +39,20 @@ const FirstMultiStepForm = () => {
 
   const handleClose = () => {
     setOpen(false);
-    
-    window.location.href = "/second-multipart-form"
+
+    window.location.href = "/";
   };
 
   const progressValue = (activeStage / totalStages) * 100;
 
   const stepTitles = {
-    1: "Criar Negocio",
-    2: "Contato",
-    3: "Local e Área",
-    4: "Horário",
-    5: "Membros",
-    6: "Dados Bancários",
-    7: "Complemento",
+    1: "Criar Anúncio",
+    2: "Configurar Anúncio",
+    3: "Palavras-chave",
+    4: "Reservas",
+    5: "Compras",
+    6: "Adicionais",
+    7: "Finalizar",
     // ... Add more titles for additional steps
   };
 
@@ -149,7 +148,7 @@ const FirstMultiStepForm = () => {
 
             <Grid>
               <Typography padding={1} component="h3" align="center">
-                Negócio cadastrado com sucesso!
+                Anúncio criado com sucesso!
               </Typography>
             </Grid>
             <Grid>
@@ -159,8 +158,20 @@ const FirstMultiStepForm = () => {
                 align="center"
                 className="step-content"
               >
-                Estamos analisando os seus dados. Enquanto isso, que tal criar o
-                seu anúncio?
+                Parabéns! Seu anúncio foi criado e enviado para revisão. Em
+                breve, ele estará ao alcance de milhares de usuários
+                interessados.
+              </Typography>
+            </Grid>
+            <Grid>
+              <Typography
+                padding={1}
+                component="p"
+                align="center"
+                className="step-content"
+              >
+                Enquanto isso, você pode gerenciar e verificar o status de todos
+                os seus anúncios na página "Meus Anúncios".
               </Typography>
             </Grid>
             <Grid item width={"350px"} paddingTop={2}>
@@ -169,16 +180,25 @@ const FirstMultiStepForm = () => {
                 className="advanceBtn btn-submit primary"
                 onClick={handleClose}
               >
-                Cadastrar Meu Negócio
+                Meus Anúncios
               </Button>
             </Grid>
-            <Grid item width={"350px"} paddingTop={2}>
+            <Grid item width={"350px"} paddingY={2}>
               <Button
                 variant={"contained"}
                 className="advanceBtn btn-submit secondary"
                 onClick={handleClose}
               >
-                Deixar para depois
+                Criar outro Anúncio
+              </Button>
+            </Grid>
+            <Grid item width={"350px"}>
+              <Button
+                variant={"contained"}
+                className="advanceBtn btn-submit secondary"
+                onClick={handleClose}
+              >
+                Área do Anunciante
               </Button>
             </Grid>
           </Box>
@@ -188,4 +208,4 @@ const FirstMultiStepForm = () => {
   );
 };
 
-export default FirstMultiStepForm;
+export default SecondMultiStepForm;

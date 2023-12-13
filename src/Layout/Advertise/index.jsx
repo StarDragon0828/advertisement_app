@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.scss";
 import { Button } from "@mui/material";
 import Layout from "../index";
@@ -16,8 +16,16 @@ import {
   Radio,
 } from "@mui/material";
 
-
 const Advertise = () => {
+  useEffect(() => {
+    const handleNExt = () => {
+      window.location.href = "/first-multipart-form";
+    };
+    window.addEventListener("click", handleNExt);
+    return () => {
+      window.removeEventListener("click", handleNExt);
+    };
+  });
   return (
     <Layout>
       <div className="wrapper">
@@ -25,35 +33,35 @@ const Advertise = () => {
           <h2 className="advertise-title">Área do Anunciante</h2>
           <div className="advertise-block">
             <div className="advertise-group">
-                <p className="ad-option">Meus Negócios</p>
-                <span className="ad-arrow"></span>
+              <p className="ad-option">Meus Negócios</p>
+              <span className="ad-arrow"></span>
             </div>
             <div className="advertise-group">
-                <p className="ad-option">Meus Meus Anúncios</p>
-                <span className="ad-arrow"></span>
+              <p className="ad-option">Meus Meus Anúncios</p>
+              <span className="ad-arrow"></span>
             </div>
             <div className="advertise-group">
-                <p className="ad-option">Adicionar Créditos</p>
-                <span className="ad-arrow"></span>
+              <p className="ad-option">Adicionar Créditos</p>
+              <span className="ad-arrow"></span>
             </div>
             <div className="advertise-group">
-                <p className="ad-option">Validar Cupom</p>
-                <span className="ad-arrow"></span>
+              <p className="ad-option">Validar Cupom</p>
+              <span className="ad-arrow"></span>
             </div>
             <div className="advertise-group">
-                <p className="ad-option">Políticas de Privacidade</p>
-                <span className="ad-arrow"></span>
+              <p className="ad-option">Políticas de Privacidade</p>
+              <span className="ad-arrow"></span>
             </div>
             <div className="advertise-group">
-                <p className="ad-option">Termos de Uso</p>
-                <span className="ad-arrow"></span>
+              <p className="ad-option">Termos de Uso</p>
+              <span className="ad-arrow"></span>
             </div>
-         </div>
-         <div className="btn-ad">
+          </div>
+          <div className="btn-ad">
             <button className="btn-outline">CRIAR ANÚNCIO</button>
-         </div>
-         </div>
-    </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };

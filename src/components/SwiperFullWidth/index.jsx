@@ -134,6 +134,9 @@ export default function SwiperFullWidth({ title }) {
                             slidesPerView: 3,
                         },
                         1300: {
+                            slidesPerView: 4,
+                        },
+                        1700: {
                             slidesPerView: 5,
                         },
                     }}

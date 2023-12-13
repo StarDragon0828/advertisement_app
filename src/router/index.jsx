@@ -1,34 +1,38 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Route, Routes } from "react-router-dom";
-import Layout from "../Layout/index"
+import Home from "../pages/Home";
+import Announcement from "../pages/Announcement";
+import ConfirmPayment from "../pages/ConfirmPayment";
+import Purchasing from "../pages/Purchasing";
+import Explore from "../pages/Explore";
+
 import Login from "../pages/Login";
-import FirstMultiStepForm from "../pages/FirstMultiStepForm";
 import Register from "../pages/Register";
 import Advertise from "../Layout/Advertise";
-import Step from "../pages/FirstMultiStepForm"
-import Explore from "../pages/Explore";
 import ItemDetails from "../pages/ItemDetails";
 import Checkout from "../pages/Checkout";
-import Purchasing from '../pages/Purchasing'
-import ConfirmPayment from '../pages/ConfirmPayment'
-
+import FirstMultiStepForm from "../pages/FirstMultiStepForm";
+import SecondMultiStepForm from "../pages/SecondMultiStepForm"
 
 const Routing = () => {
     return (
-        <div>
+        <Fragment>
             <Routes>
-                <Route path="/" element={<Login />} />
-                <Route path="/register" element={<Register />} />
-                <Route path="/advertise" element={<Advertise />} />
-                <Route path="/explore" element={<Explore />} />
+                <Route path="/step3" element={<Home />} />
+                <Route path="/step2" element={<Announcement />} />
+                <Route path="/confirm-payment" element={<ConfirmPayment />} />
+                <Route path="/purchasing" element={<Purchasing />} />
+                <Route path="/" element={<Explore />} />
+
                 <Route path="/item-details" element={<ItemDetails />} />
                 <Route path="/checkout" element={<Checkout />} />
-                <Route path="/purchase" element={<Purchasing />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/advertise" element={<Advertise />} />
                 <Route exact path="/first-multipart-form" element={<FirstMultiStepForm />} />
-                <Route path="/step" element={<Step />} />
-                <Route path="/confirm-payment" element={<ConfirmPayment />} />
+                <Route exact path="/second-multipart-form" element={<SecondMultiStepForm />} />
             </Routes>
-        </div>
+        </Fragment>
     )
 }
 
